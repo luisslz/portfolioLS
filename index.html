@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <section class="banner" id = "home">
+        <div class="imgSideBar">
+            <img src="./images/bg.jpg" alt="">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">Mi_Portfolio</h5>
+            <div class="tope">
+                <h4><span>Hola</span>, Soy</h4>
+                <h2>Luis Salazar</h2>
+                <h4>Soy un desarrollador web front end.</h4>
+                <a href="#about" class="btn">Arceca de</a>
+            </div> 
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="title white">
+            <h2>Acerca de</h2>
+            <p>Soy una persona dedicada a la programación, diseño web y gráfico. Estoy en la busqueda de una empresa donde pueda fomentar mi crecimiento personal y profesional. Donde pueda aprender e implementar mis conocimientos adquiridos.</p>
+        </div>
+        <div class="content">
+            <div class="textBx">
+                <p>Busco el constante desarrollo de mis habilidades como programador. investigando día a día, para solucionar las adversidades que se presenten.</p>
+            </div>
+            <div class="imgBx">
+                <img src="./images/bg1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="title">
+            <h2>Mi Servicios</h2>
+            <p>Estos son los servicios que me especializo.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="./images/icon1.png" alt="">
+                <h2>Web Design</h2>
+                <p>Desarrolo web, con html css. También tengo conocimiento en wordpress.</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="./images/icon2.png" alt="">
+                <h2>Lenguaje de programación JS</h2>
+                <p>Programacion en JavaScript</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="./images/icon4.png" alt="">
+                    <h2>Edición de imágenes y fotografía</h2>
+                    <p>Edición especializado en Photoshop e Illustrator</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="./images/icon5.png" alt="">
+                    <h2>Manejo de redes</h2>
+                    <p>Manejo de todas las redes sociales conocidas "Facebon, Twitter e Instagram"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <div class="title">
+            <h2>Certificados</h2>
+            <p>Estos son los certificados que he obtenido en el transcurso de mi aprendizajes</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="./images/img1.jpg" alt="">
+                </div>
+                <div class="textBx1">
+                    <h3 class="textMin">Introducción al Desarrollo Web front end: HTML y CSS</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="./images/img2.jpg" alt="">
+                </div>
+                <div class="textBx1">
+                    <h3>Diseño web responsivo con cajas flexibles css</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="./images/img3.jpg" alt="">
+                </div>
+                <div class="textBx1">
+                    <h3>Master Diseño Gráfico</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="title white">
+            <h2>Contacto</h2>
+            <p>Para cualquier información puede comunicarse conmigo.</p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="Nombre">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Apellido">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Correo">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Teléfono">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col100">
+                    <textarea placeholder="Mensaje"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col100">
+                        <input type="submit" value="Enviar"></input>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright 2022. All Rights Reserved</p>
+    </div>
+    <div class="sidebar">
+        <ul class="men">
+            <li><a href="#home" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="#about" onclick="toggleMenu()">Acerca de mi</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Servicios</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Certificados</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
